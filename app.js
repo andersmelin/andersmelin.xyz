@@ -15,4 +15,6 @@ app.use(function(error, req, res, next) {
     res.status(500).send('500: Internal Server Error');
 });
 
+app.listen(8000, () => console.log("Listening on port 8000"));
+
 // Dummy text
