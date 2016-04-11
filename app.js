@@ -1,6 +1,7 @@
 var express = require("express");
 var app = express();
 
+
 app.get("/", (req, res) => {
     res.status("200").send("<a href='http://cloudnotes.andersmelin.xyz'>CloudNotes</a>");
 });
@@ -16,5 +17,3 @@ app.use(function(error, req, res, next) {
 });
 
 app.listen(8000, () => console.log("Listening on port 8000"));
-
-// Dummy text
